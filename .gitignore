@@ -1,3 +1,12 @@
+# macOS system files
+.DS_Store
+
+# VS Code files
+.vscode/
+
+# IntelliJ IDEA files
+.idea/
+*.iml
 # Build and Release Folders
 bin-debug/
 bin-release/
