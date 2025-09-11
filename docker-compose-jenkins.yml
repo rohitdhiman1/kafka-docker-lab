@@ -10,8 +10,7 @@ services:
       - jenkins_home:/var/jenkins_home
       - /var/run/docker.sock:/var/run/docker.sock # Allow Jenkins to use Docker
     environment:
-      JENKINS_OPTS: --prefix=/jenkins
-      JAVA_OPTS: -Djenkins.install.runSetupWizard=false
+      JAVA_OPTS: "-Djenkins.install.runSetupWizard=false"
     networks:
       - jenkins-net
 
